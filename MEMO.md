@@ -9,6 +9,9 @@
 - **Dashboard**
   - Time, system time
   - Weather, from API
+  - Quotes, source https://www.kaggle.com/datasets/faellielupe/goodreads-quotes?resource=download
+    - SQLite : File > Export > JSON
+    - MySQL Workbench : Tables > Table Data Import Wizard > {follow the steps, import into new table} : unselect "likes" and "tags" 
   - Gmail, get emails, from API
   - Youtube, get playlist, from API
   - ToDo list, local DB
@@ -18,6 +21,7 @@
 ### Inspiration:
 https://i.pinimg.com/originals/4f/1e/b4/4f1eb45fda50bc63286acc91f96eaacb.png
 
+Q
 
 ### Tech:
 - Java 17

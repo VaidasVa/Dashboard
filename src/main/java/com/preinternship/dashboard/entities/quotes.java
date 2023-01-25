@@ -8,12 +8,12 @@ import lombok.*;
 public class quotes {
 
     @Column(name = "quote")
-    private String quote;
+    private String QUOTE;
 
     @Column(name = "title")
-    private String title;
+    private String TITLE;
 
     @Column(name = "author")
-    private String author;
+    private String AUTHOR;
 
 }

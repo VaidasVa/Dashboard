@@ -5,14 +5,11 @@ import lombok.*;
 
 import java.util.Date;
 
-@Builder // ??
-@Data  // ??
+// @Builder
+@Data  // @AllArgsConstructor ateina su data
 @Entity // maps to DB table
-@Setter
-@Getter
 //@RequiredArgsConstructor // generates a constructor with 1 parameter for each field that requires special handling. All non-initialized final fields get a parameter, as well as any fields that are marked as @NonNull that aren't initialized where they are declared. For those fields marked with @NonNull, an explicit null check is also generated.
-@AllArgsConstructor // generates a constructor with 1 parameter for each field in your class. Fields marked with @NonNull result in null checks on those parameters.
-@Table(name="users",uniqueConstraints=@UniqueConstraint(columnNames={"id","userName","email"}))
+@Table(name="users")
 public class User {
 
     @Id // Primary key
